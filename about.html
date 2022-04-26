@@ -1,0 +1,221 @@
+<DOCTYPE html>
+    <html>
+        <head>
+         <meta charset="utf-8">
+         <title>Overhelmed</title>
+         <link rel="stylesheet" href="./css/aboutCSS.css">
+         <script async defer src="https://buttons.github.io/buttons.js"></script>
+         </head>
+         <body>
+	<section>
+		<div style="position:fixed;bottom:8px;right:4px;z-index: 2;">
+			<a class="github-button" href="https://github.com/Thomeesss/Projet-S2-TALP" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="GitHub">PROJET GitHub</a>
+		</div>
+		<div class="content">
+			<div>
+				<h2>À propos</h2>
+				<p>Sur cette page, vous trouverez l'avancement du projet qui est constitué de l'évolution de la map, des animations, de la création de l'interface de jeu et plus encore. Il expose également les difficultés rencontrées lors de la conception de notre jeu.</p>
+				<a href="#lireplus">En savoir plus</a>
+			</div>
+		</div>
+		<div class="imgBx" id="perso">
+			<img src="css/logo.PNG">
+		</div>
+        <ul class="nav">
+            <li><a  href="acceuil.html">Accueil</a></li>
+            <li><a class="active" href="about.html">Le Projet</a></li>
+            <li><a href="download.html">Télécharger</a></li>
+            <li><a href="album.html">Albums</a></li>
+            <li><a href="référence.html">Références</a></li>
+        </ul>
+	</section>
+	<section id="v1">
+		<div class="content" id="lireplus">
+			<div>
+				<h3>Le commencement</h3>
+				<p>Lors de la conception initiale de notre projet, nous étions pratiquement surs
+					que nous allions faire un jeu vidéo. Cependant, nous avions de nombreuses idées
+					différentes, telles qu’un jeu de parkour 3D, un jeu “top-down” à la “Pokémon”
+					ou encore un jeu d’infiltration ressemblant a “Hitman”. Finalement, nous avons
+					opté pour un jeu de survie multijoueur en FPS (“First-person shooter”) de type
+					PvE (“Player vs Environment”). De 1 à 4 joueurs, le but est de survivre le plus
+					longtemps possible à des vagues de zombies dans un camp militaire abandonné.
+					Des améliorations seront possible tout au long de l’aventure et de nombreux
+					événement spéciaux occurreront durant différents tours.</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="content" id="lireplus">
+			<div>
+				<h2>Les objectifs du Jeu</h2>
+				<h3>Menu principal</h3>
+				<p> 
+					Une fois l’application démarrée, le menu
+					principal s’affiche. Différentes sélections sont proposées à côté de notre personnage pour jouer : “Lancer un Lobby”, pour ainsi être l’hôte de la partie,
+					et, “Rejoindre un Lobby” (en utilisant un code que l’hôte peut transmettre).
+					D’autres fonctionnalites sont aussi présentes dans le menu principal comme par
+					exemple le “Vestiaire” qui permet de modifier la tenue de notre personnage. En
+					effet, en sélectionnant une autre tenue, cette derni`ere sera affichée dans le menu.
+					Le personnage que va incarner le joueur est celui affiché dans le menu lors du
+					lancement de la partie. Avec ceci, on retrouve les “Param`etres” permettant au
+					joueur de régler les commandes de jeu ainsi que le son du jeu. Et enfin, pour
+					pouvoir quitter le jeu, il y a une case “Fermer le jeu”.
+				</p>
+				<h3>Le Lobby</h3>
+				<p> 
+					Le Lobby est le salon d’attente. Le premier joueur à atterrir dans un lobby est
+					l’hôte. Il a un code affiché sur son écran qu’il peut partager à ses partenaires pour
+					le rejoindre. Le Lobby est une grotte, c’est ici que chaque joueur sélectionne son
+					arme de départ et peut s’informer du déroulement de la partie. Une fois qu’un
+					joueur à une arme en main, il peut cliquer sur le bouton “prêt” qui sera affiché
+					sur son écran. Quand tous les joueurs sont prêts, la partie se lance.
+				</p>
+				<h3> Map et Game Play</h3>
+				<p> Une fois la partie lancée, nos joueurs se retrouvent au beau milieu d’un camp
+					militaire, en pleine forêt. C’est dans cet endroit qu’aura lieu la survie. En effet,
+					le site sera délimité par des mûrs, des rochers, arbres ou encore des barrières.
+					Une premi`ere vague d’adversaires arrive quelques secondes après entrée en jeu.
+					L’objectif est donc pour nos joueurs d’éliminer chaque ennemi, avec les ressources dont ils disposent. Une vague a un nombre défini de zombies, qui augmente à chaque vague. Quand un joueur se fait éliminer, il doit alors attendre
+					que la vague se finisse. Si tous les joueurs sont morts durant la vague, la partie
+					s’arrête.</p>
+			</div>
+		</div>
+		
+	</section>
+	<section>
+		<div class="content" id="lireplus">
+			<div>
+				<h2>Première Version </h2>
+				<h3>Model3D</h3>
+				<p>  Celle-ci a été inspirée de camp militaire issu de jeu vidéo tel que par exemple Call of Duty Warzone ou d'images trouvées sur le Web. Notre Map est constitué d'élement réalisé par Blender ou issu de l'AssetStore est tous assemblé sur le logiciel Unity. Pour cette première version, notre map représente un camp militaire presque complet, il ne lui manque que quelques détails tel que des portes aux batiments et elle a également quelques soucis de proportinnalité générale.
+					Concernant le skin de nos personnages, nous avons utilisé Mixamo pour upload les quatre skins voulu pour nos personnages et le skin des zombies.
+				</p>
+				<h3>Animation3D</h3>
+				<p> 
+					D'abord, il était important que le personnage puisse être mobile, qu'il puisse se déplacer dans toutes les directions. Le personnage se déplace en avant, en arrière, à gauche et à droite. Nous avons également ajouté la fonctionnalité de saut, et tout le code qui va avec afin que le personnage ne puisse sauter si et seulement si il est au sol. Une fois toutes ces possibilités ajoutées, nous devions nous occuper du visuel, car jusque-là, le personnage va là où on lui demande, mais en gardant la posture initiale. Ainsi, nous nous sommes aidés de Mixamo, pour télécharger les animations de marche, de course, de saut, et de respiration (le joueur est inactif, il reste sur place).</p>
+				</p>
+				<h3>Engine</h3>
+				<p>Premièrement, les déplacements du personnage ayant déjà été développé pour l'animation 3D, Il ne manque plus que les collisions afin de permettre au personnage d’empêcher le personnage de rentrer dans un mur ou un autre joueur. Cela a été fait en utilisant la même méthode que pour le TD d’AR/VR. 
+
+					Deuxièmement, le control de la caméra grâce à la souris est au cœur même des FPS. Afin de l’implémenter l’utilisation des classes et méthodes de la librairie “UnityEngine” fut nécessaire. Pour permettre un certain réalisme il a fallu empêcher la caméra de pouvoir faire une rotation entière sur l’axe Y. Elle est donc bloquée au minimum au niveau des pieds du personnage et au maximum au niveau de sa tête. 
+					
+					Troisièmement, l’implémentation des armes et de la possibilité de tirer. Pour permettre cela, la création de 6 nouvelles class fut requise. Item et Gun, deux classes abstraites permettant une création plus simple d’armes différentes. ItemInfo et GunInfo, deux classes deux classes stockant le nom et les dégâts de l’armes. La class IDamageable est une class dont hérite tous les objets pouvant prendre des dêgats. Et enfin SingleShotGun, la classe définissant notre arme. Dans celle-ci, la fonction Use est utilisé que lorsque PlayerController détecte l’utilisation du clic droit et pose un impact sur la position du premier objet touché et lui retire les dégâts de l’armes s'il peut en prendre. Dans cette rubrique malgré que cela n’était pas encore nécessaire à la soutenance, l’ajout d’une seconde arme ainsi que de la possibilité de changer d’une arme à une autre a déjà été implémenté. 
+					</p>
+				<h3>Game Management</h3>
+				<p>Cette partie constite à pouvoir gérer les kills, morts, spawns et respawns des joueurs. L'initialisation des joueurs par un RoomManager et PlayerManager a paru opportun.  En effet la class RoomManager permet d’initié une instance de la class  PlayerManager par joueur. Cette instance devra initialiser une instance de la class PlayerController qui apparaitra sur un point de “spawn” aléatoire sur la carte. Elle sera détruite dès que les points de vie seront à 0, puis réinitialisé par la suite. La class SpawnManager permet de gérer les points d’apparition et sa méthode d’en obtenir un aléatoirement qui sont initialisé avec la class Spawnpoint. Il fut aussi nécessaire de synchroniser certaine information entre les différents joueurs, tel que les dégâts encaissés et fait. Pour faire cela les méthodes de la librairie photon fut utilisé.</p>
+				<h3>Interfaces</h3>
+				<p>Avant le menu principal, nous avons donc du insérer un écran de chargement pour éviter les erreurs lorsque un utilisateur essaye de créer ou rejoindre une “room” avant que la connection au server soit fini.
+				Ensuite, il a fallu créer un script “MenuManager” permettant de gérer l'ouverture et la fermeture des menus (l'écran de chargement, le menu principal, le menu où l'on créer la “room”, etc.).
+				Nous avons aussi fait un menu d'erreur lorsque l'on arrive pas à créer une “room”.
+				Nos menus sont composés de “Button” permettant différentes actions et de “InputField” pour récupérer du texte de l'utilisateur.
+				L'utilisation des classes préfaites de PUN furent aussi très utiles tel que la classe “Player”, notamment pour donner un pseudonyme aux joueurs ou encore “RoomInfo” pour identifier et distinguer chacunes d'entre elles. 
+				La partie “Interfaces” est donc à jour avec l'objectif fixé pour la première soutenance : on a bien un menu principal qui nous permet d'effectuer les actions dont on a besoin. Il resterait juste à le rendre un peu plus esthétique puisqu'il est assez terne pour l'instant (on peut s'occuper de cela plus tard, voire même pour la dernière soutenance puisque cela est de moindre importance).
+				De plus, nous avons pu prendre de l'avance sur cette partie puisque nous avons déjà pu intégrer les pseudos qui s'affichent au-dessus des joueurs. Pour cela, il y a simplement besoin de faire que le texte créé au-dessus du joueur s'oriente constamment dans la direction de la caméra.
+			</p>
+			<h3>Réseau</h3>
+			<p>
+				Tout d'abord il a fallu implémenter et paramétrer l'application Photon.
+				Sur leur site web (photonengine.com), on peut créer une nouvelle application Photon à partir de son dashboard. On obtient ainsi une App ID, propre à notre server Photon.
+				Ensuite, on a dû importer le package PUN 2, une sorte de boîte à outils permettant de mettre en relation notre projet Unity avec son server Photon dédié (grâce à son App ID).
+				Le fichier PhotonServerSettings nous permet alors de gérer quelques paramètres, tel que la possibilité de fixer la région en EU pour éviter tout problème de latence. 
+			</p>
+			</div>
+		</div>
+		
+	</section>
+	<section>
+		<div class="content" id="lireplus">
+			<div>
+				<h2>Deuxième Version </h2>
+				<h3>Model3D</h3>
+				<p> 
+					 Notre Map est finalisée tout les problèmes de proportions ont été réglé. Celle-ci est donc inspiré d'un camp militaire dans lequel il existe plusieurs zones. Il y a des zones desaffectées, un camp d'entrainement, un espace santé, une zone de tir, un parking pour les voitures etc.
+					 Nous avons donc une map plutot complete. Vous pouvez retrouver des photos de celle-ci dans la rubrique Album puis dans l'espace Map.
+				</p>
+				<h3>Animations3D</h3>
+				<p> 
+					</p>
+				<h3>Audio</h3>
+				<p> 
+					Afin de rendre le jeu un peu plus attrayant, nous avons ajouté une musique pour le menu qui est plutot stressante pour mettre le joueur déjà dans l'ambiance du jeu. Nous avons également ajouté quelques bruitages pour les zombies.
+				</p>
+				<h3>Engine</h3>
+				<h3>Game Management</h3>
+				<h3>Interfaces</h3>
+				<h3>Réseau</h3>
+				<h3>Site Web</h3>
+			<p>Concernant le Site Web, notre toute premiere version de celui-ci était déjà pas mal avancé. Nous avons cependant opté plus sur le contenu que sur le rendu, et l'esthétique malgré que celui-ci est déjà un rendu qui était très convenable, cependant il manquait de finesse.
+				De plus, nous l'avions déjà rendu public en le publiant sur le Web car comme celui-ci montre l'avancement de notre projet, autant que tout le monde le voit avancer en temps réel. 
+				Le site Web s'inspire des couleurs de notre logo soit le noir et l'orange, ce qui le rend totalement à l'image de notre jeu. 
+				Nous voulons que les personnes qui suivent notre projet puissent le faire à l'aide de notre site qui est actualisé à chaque fois que nous avançons sur notre projet.
+			</p>
+			</div>
+		</div>
+		<div class="imgBx">
+			<img src="css/logo.PNG">
+		</div>
+	</section>
+	<div class="origin">
+		<h2>Les Membres du Groupe</h2>
+		<div class="container">
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img src="css/logo.PNG">
+					<h3>Paul</h3>
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="content">
+					<p><b>Responsable tache :</b> Interfaces, Réseau
+					<br><b>Suppléant:</b> Game Management, Engine
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img id="spe" src="css/logo.PNG">
+					<h3>Thomas</h3>
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="content">
+					<p><b>Responsable tache :</b> Model3D, Audio
+					<br><b>Suppléant:</b> Animation3D, Interfaces
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img id="spe" src="css/logo.PNG">
+					<h3>Lucas</h3>
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="content">
+					<p><b>Responsable tache :</b> Engine, Game Management
+					<br><b>Suppléant:</b> Site Web, Réseau
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<img id="spe" src="css/logo.PNG">
+					<h3>Alexiane</h3>
+				</div>
+			</div>
+			<div class="face face2">
+				<div class="content">
+					<p><b>Responsable tache :</b> Animation3D, Site Web
+					<br><b>Suppléant:</b> Audio, Model3D
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    </body>
+    </html>
