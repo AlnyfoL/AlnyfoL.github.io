@@ -34,7 +34,7 @@ section:before
 	width: 100%;
 	height: 100%;
 	background: #ff9900;
-	clip-path: ellipse(350px 350px at 52% 50%);
+	clip-path: ellipse(420px 420px at 50% 60%);
 	animation: fade-in 0.5s ease-in forwards;
 	animation-delay: 1.5s;
 	opacity: 0;
