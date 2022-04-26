@@ -63,8 +63,8 @@ section .content
 }
 #v1
 {
-	background: no-repeat url(css/logo.png);
-	background-size: cover;
+	background-image: url(../img/zo.jpg);
+	background-repeat: no-repeat;
 }
 #v1 .content
 {
