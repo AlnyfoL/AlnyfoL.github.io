@@ -155,9 +155,11 @@ section .imgBx img
 }
 #map img
 {
-	width: 400px;
+	width: 450px;
+	height: 300px;
 	float:left;
 	margin-right: 5%;
+	margin-bottom: 5%;
 	border : 1px solid #ffd;
 	background: #ffd
 }
