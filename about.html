@@ -204,6 +204,21 @@
 					Tout ceci a été dévelopé dans un projet externe et n'a pas encore été rattaché au projet principal, car la map est trop complexe pour
 					 permettre de simple essaie de recherche de chemin expérimentale.  Et donc une map plus simpliste était préférable pour
 					  le développement.</p>
+					  <h3>Interfaces</h3>
+					  <p>La partie interface fut relativement légère comparée à ce qui fut fait dans cette partie pour 
+						  la première soutenance. Effectivement, pour cette soutenance, nous avions prévu d'ajouter quelques éléments 
+						  sur l'interface utilisateur du joueur. Cependant, la plus part des valeurs que nous voulions afficher dépende 
+						  d'autres fonctionnalités et nécessite un fort avancement dans le projet pour pouvoir être implémenté pleinement. 
+						  Par exemple, pour afficher l'argent que possède le joueur sur son interface utilisateur, il faut que tout le système
+						   de gestion de l'argent soit déjà implémenté, c'est à dire aussi que les zombies doivent 
+						  être entièrement intégré au préalable, etc. Alors un des seuls éléments de l'interface qui valait le coût d'implémenter 
+						  dès à présent fut la barre de santé. 
+						Pour cela, ce n'était point trop compliqué : sur un canvas  (un plan, en 2 dimensions, qui s'affiche directement 
+						sur la caméra du joueur), on place 2 images, une pour la barre de santé en tant que tel, et une pour son arrière-plan.
+						 Ensuite, il a fallu juste faire en sorte que dans notre fonction qui gère lorsque que l'on prend des dégâts, l'image qui 
+						 représente notre barre de santé diminium en fonction d'un ratio ( nombre de vie actuel nombre de vie total pour être précis).
+						  Enfin, il faut bien faire attention à ce que chaque barre de santé s'affiche sur le bon joueur car de base, elles s'affichent 
+						  toutes sur chaque joueur (on utilise pour cela Photon ; plus de détail sur cela dans la partie ci-dessous).</p>
 				<h3>Game Management</h3>
 				<p>Afin d'implémenter un système de round autrement définie par vagues de zombi. Il a donc paru nécessaire d'améliorer les
 					 statistiques des zombis à la suite de la validation 
@@ -211,6 +226,7 @@
 					 la fonction updatée cherche si la condition est remplie. Si oui les statistiques des zombis à leurs prochaines apparitions sont augmentées.
 					Un système d'argent et d'expérience a aussi été implémenté, il permettra par la suite d'acheter de meilleures armes ou des 
 					améliorations. Ceci a aussi été seulement implémenté sur le projet externe car il se devait d'être avec les zombis.</p>
+				
 				<h3>Réseau</h3>
 				<p>Dans la partie réseau, le plus compliqué est de mettre en place le server dédié au jeu ainsi que de réaliser un système 
 				permettant au joueurs de se retrouver et de se connecter à la même partie. Comme ces éléments sont importants et doivent 
