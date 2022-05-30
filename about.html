@@ -16,15 +16,13 @@
 				<br><br><h2>Le Projet</h2>
 				<p>Sur cette page, vous trouverez l'avancement du projet qui est constitué de l'évolution de la map, des animations, de la création de l'interface de jeu et plus encore. Il expose également les difficultés rencontrées lors de la conception de notre jeu.</p>
 			</br></br>
-				<h4 id="lireplus":>Sommaire:</h4> </li>
+				<h4>Sommaire:</h4> </li>
 						<ul>
-		
+							<br> 
+
 							<li> <a href="#commencement"> Le commencement </a> </li>
 							<br>
-		
-							<li> <a href="#obj"> Les objectifs du jeu </a> </li>
-							<br>
-							
+	
 							<li> <a href="#version1"> La première version </a> </li>
 							<br>
 		
@@ -49,10 +47,12 @@
         <ul class="nav">
             <li><a  href="index.html">Accueil</a></li>
             <li><a class="active" href="about.html">Le Projet</a></li>
+			<li><a href="jeu.html">Mode d'emploi</a></li>
             <li><a href="download.html">Télécharger</a></li>
             <li><a href="album.html">Albums</a></li>
             <li><a href="référence.html">Références</a></li>
 			<li><a href="membre.html">Le Groupe</a></li>
+
         </ul>
 	</section>
 	<section id="v1">
@@ -72,50 +72,6 @@
 		</div>
 	</section>
 	<section>
-		<div class="content" id="obj">
-			<div>
-				<h2>Les objectifs du Jeu</h2>
-				<h3>Menu principal</h3>
-				<p> 
-					<br> 
-					Revenons à notre Overwhelmed. Une fois l’application démarrée, le menu principal s’affiche.
-					Le personnage que va incarner le joueur est celui affiché dans le menu lors du lancement de la partie.
-					Dans le menu principal différentes sélections sont proposées à côté de notre personnage pour jouer : 
-					<br>
-					<br>1. “Lancer un Lobby” : Etre l’hôte de la partie.</br>
-				<br>2. “Rejoindre un Lobby” : A l'aide d'un code que l’hôte peut transmettre.</br>
-				<br>3. “Vestiaire” : Modifier la tenue de notre personnage (en sélectionnant une autre tenue, cette dernière sera affichée dans le menu).</br>
-				<br>4. “Paramètres” : Permet au joueur de régler les commandes de jeu ainsi que le son du jeu.</br>
-				<br>5. “Fermer le jeu” : Quitter le jeu.</br>
-				</p>
-				<br>
-				<h3>Le Lobby</h3>
-			</br>
-				<p> 
-					Le Lobby est le salon d’attente. Le premier joueur à atterrir dans un lobby est
-					l’hôte. Il a un code affiché sur son écran qu’il peut partager à ses partenaires pour
-					le rejoindre. Le Lobby est une grotte, c’est ici que chaque joueur sélectionne son
-					arme de départ et peut s’informer du déroulement de la partie. Une fois qu’un
-					joueur à une arme en main, il peut cliquer sur le bouton “prêt” qui sera affiché
-					sur son écran. Quand tous les joueurs sont prêts, la partie se lance.
-				</p>
-				<br>
-				<h3> Map et Game Play</h3>
-			</br>
-				<p> Une fois la partie lancée, nos joueurs se retrouvent au beau milieu d’un camp militaire, 
-					en pleine forêt. C’est dans cet endroit qu’aura lieu la survie. En effet, le site sera délimité
-					 par des mûrs, des rochers, arbres ou encore des barrières. Une première vague d’adversaires arrive 
-					 quelques secondes après l'entrée en jeu. L’objectif est donc pour nos joueurs d’éliminer chaque ennemi, 
-					 avec les ressources dont ils disposent. Une vague a un nombre défini de zombies, qui augmente à chaque
-					  vague. L'intelligence artificiel des zombies sera simulé par un “pathing” intelligent (“Pathfinding” grâce
-					   à l'utilisation du “NavMesh”) mais aussi par le choix de sa cible en fonction de la distance. Quand un 
-					   joueur se fait éliminer, il doit alors attendre que la vague se finisse. Si tous les joueurs sont morts
-					    durant la vague, la partie s'arrête.</p>
-			</div>
-		</div>
-		
-	</section>
-	<section>
 		<div class="content" id="version1">
 			<div>
 				<h2>Première Version </h2>
@@ -126,15 +82,17 @@
 				<p>  La map été inspirée de camp militaire issu de jeu vidéo tel que par exemple Call of Duty Warzone ou d'images trouvées sur le Web. Notre Map est constitué d'élement réalisé par Blender ou issu de l'AssetStore est tous assemblé sur le logiciel Unity. Pour cette première version, notre map représente un camp militaire presque complet, il ne lui manque que quelques détails tel que des portes aux batiments et elle a également quelques soucis de proportinnalité générale.
 					Concernant le skin de nos personnages, nous avons utilisé Mixamo pour upload les quatre skins voulu pour nos personnages et le skin des zombies.
 				</p>
-				<br><br><br>
+				<br>
+				<br></br><br></br>
 				<h3>Animation 3D</h3>
 				<p> 
 					D'abord, il était important que le personnage puisse être mobile, qu'il puisse se déplacer dans toutes les directions. Le personnage se déplace en avant, en arrière, à gauche et à droite. Nous avons également ajouté la fonctionnalité de saut, et tout le code qui va avec afin que le personnage ne puisse sauter si et seulement si il est au sol. Une fois toutes ces possibilités ajoutées, nous devions nous occuper du visuel, car jusque-là, le personnage va là où on lui demande, mais en gardant la posture initiale. Ainsi, nous nous sommes aidés de Mixamo, pour télécharger les animations de marche, de course, de saut, et de respiration (le joueur est inactif, il reste sur place).</p>
 				</p>
-			</br></br></br>
+			</br>
 				<div class="imgBx" id="ani">
 					<img src="img/Capture Anim Player.png">
 				</div>
+				<br></br><br></br>
 				<h3>Engine</h3>
 				<p>Premièrement, les déplacements du personnage ayant déjà été développé pour l'animation 3D, Il ne manque plus que les collisions afin de permettre au personnage d’empêcher le personnage de rentrer dans un mur ou un autre joueur. Cela a été fait en utilisant la même méthode que pour le TD d’AR/VR. 
 
@@ -142,8 +100,10 @@
 					
 					Troisièmement, l’implémentation des armes et de la possibilité de tirer. Pour permettre cela, la création de 6 nouvelles class fut requise. Item et Gun, deux classes abstraites permettant une création plus simple d’armes différentes. ItemInfo et GunInfo, deux classes deux classes stockant le nom et les dégâts de l’armes. La class IDamageable est une class dont hérite tous les objets pouvant prendre des dêgats. Et enfin SingleShotGun, la classe définissant notre arme. Dans celle-ci, la fonction Use est utilisé que lorsque PlayerController détecte l’utilisation du clic droit et pose un impact sur la position du premier objet touché et lui retire les dégâts de l’armes s'il peut en prendre. Dans cette rubrique malgré que cela n’était pas encore nécessaire à la soutenance, l’ajout d’une seconde arme ainsi que de la possibilité de changer d’une arme à une autre a déjà été implémenté. 
 					</p>
+					<br></br>
 				<h3>Game Management</h3>
 				<p>Cette partie constite à pouvoir gérer les kills, morts, spawns et respawns des joueurs. L'initialisation des joueurs par un RoomManager et PlayerManager a paru opportun.  En effet la class RoomManager permet d’initié une instance de la class  PlayerManager par joueur. Cette instance devra initialiser une instance de la class PlayerController qui apparaitra sur un point de “spawn” aléatoire sur la carte. Elle sera détruite dès que les points de vie seront à 0, puis réinitialisé par la suite. La class SpawnManager permet de gérer les points d’apparition et sa méthode d’en obtenir un aléatoirement qui sont initialisé avec la class Spawnpoint. Il fut aussi nécessaire de synchroniser certaine information entre les différents joueurs, tel que les dégâts encaissés et fait. Pour faire cela les méthodes de la librairie photon fut utilisé.</p>
+				<br></br>
 				<h3>Interfaces</h3>
 				<p>Avant le menu principal, nous avons donc du insérer un écran de chargement pour éviter les erreurs lorsque un utilisateur essaye de créer ou rejoindre une “room” avant que la connection au server soit fini.
 				Ensuite, il a fallu créer un script “MenuManager” permettant de gérer l'ouverture et la fermeture des menus (l'écran de chargement, le menu principal, le menu où l'on créer la “room”, etc.).
@@ -192,8 +152,7 @@
 					Nous avons donc une map plutôt complète. Vous pouvez retrouver des photos de celle-ci dans la rubrique Album puis dans l'espace Map.
 					<br><br>Pour les personnages, comme il s'agit d'un FPS, nous avons <br> ajouté un modèle de bras avec une arme pour le joueur.</br> </br></br>
 				</p>
-			</br></br>
-				<br><br>
+				<br></br>
 				<h3>Animations 3D</h3>
 				<p> 
 					En ce qui concerne la modélisation 3D, nous nous sommes plus particulièrement focalisés sur la vue en première personne.
@@ -206,8 +165,8 @@
 					   concerne le personnage que l'on incarne dans le jeu, mais les zombies aussi ont leurs animations.
 					 En effet, les zombies peuvent désormais se déplacer tout en ayant un corps animé, et ont également une animation d'attaque.
 					</p>
-				</br></br>
 				<br>
+				<br></br>
 				<h3>Audio</h3>
 				<p> 
 					La partie Audio est certainement la partie la moins compliquée que nous avons dû faire jusqu'ici. Néanmoins, il est important 
@@ -217,6 +176,7 @@
 					En effet, lorsque l'on tire une balle, un coup de feu est activé.
 				</p>
 			</br>
+			<br></br>
 				<h3>Engine</h3>
 				<p>Pour cette nouvelle version Lucas avait à implémenter une intelligence artificielle qui pouvait servir d'ennemies. Afin de faire cela, 
 					il utilisa principalement les méthodes de la classe NavMeshAgent de 
@@ -229,6 +189,7 @@
 					Tout ceci a été dévelopé dans un projet externe et n'a pas encore été rattaché au projet principal, car la map est trop complexe pour
 					 permettre de simple essaie de recherche de chemin expérimentale.  Et donc une map plus simpliste était préférable pour
 					  le développement.</p>
+					  <br></br>
 					  <h3>Interfaces</h3>
 					  <p>La partie interface fut relativement légère comparée à ce qui fut fait dans cette partie pour 
 						  la première soutenance. Effectivement, pour cette soutenance, nous avions prévu d'ajouter quelques éléments 
@@ -244,6 +205,7 @@
 						 représente notre barre de santé diminium en fonction d'un ratio ( nombre de vie actuel nombre de vie total pour être précis).
 						  Enfin, il faut bien faire attention à ce que chaque barre de santé s'affiche sur le bon joueur car de base, elles s'affichent 
 						  toutes sur chaque joueur (on utilise pour cela Photon ; plus de détail sur cela dans la partie ci-dessous).</p>
+						  <br></br>
 				<h3>Game Management</h3>
 				<p>Afin d'implémenter un système de round autrement définie par vagues de zombi. Il a donc paru nécessaire d'améliorer les
 					 statistiques des zombis à la suite de la validation 
@@ -251,7 +213,7 @@
 					 la fonction updatée cherche si la condition est remplie. Si oui les statistiques des zombis à leurs prochaines apparitions sont augmentées.
 					Un système d'argent et d'expérience a aussi été implémenté, il permettra par la suite d'acheter de meilleures armes ou des 
 					améliorations. Ceci a aussi été seulement implémenté sur le projet externe car il se devait d'être avec les zombis.</p>
-				
+					<br></br>
 				<h3>Réseau</h3>
 				<p>Dans la partie réseau, le plus compliqué est de mettre en place le server dédié au jeu ainsi que de réaliser un système 
 				permettant au joueurs de se retrouver et de se connecter à la même partie. Comme ces éléments sont importants et doivent 
@@ -262,6 +224,7 @@
 				intitulé Photon, nous permet de gérer cela assez facilement. En effet, grâce à Photon, 
 				nous avons à disposition deux composants préfaits pour s'occuper de ça.
 			</p><br>
+			<br></br>
 				<h3>Autres \ Détails </h3>
 				<p>Une partie dont nous n'avions pas réellement évalué l'importance est tout ce qui corresponds aux éléments 
 				qui ne se retrouvent dans aucune des catégories précédentes. En effet, la conception d'un jeu vidéo nécessite de 
@@ -276,6 +239,7 @@
 					<img src="img/v2 autre (2).png">
 				</div>
 				<br><br>
+				<br></br>
 				<h3>Site Web</h3>
 			<p>Concernant le Site Web, notre toute premiere version de celui-ci était déjà pas mal avancé. Nous avons cependant opté plus sur le contenu que sur le rendu, et l'esthétique malgré que celui-ci est déjà un rendu qui était très convenable, cependant il manquait de finesse.
 				De plus, nous l'avions déjà rendu public en le publiant sur le Web car comme celui-ci montre l'avancement de notre projet, autant que tout le monde le voit avancer en temps réel. 
