@@ -9,6 +9,7 @@
 body
 {
 	overflow-x: hidden;
+	width:100%;
 }
 
 section
@@ -188,7 +189,7 @@ section .imgBx img
 	opacity: 1;
 	color: #ff9900;
 }
-/* 
+
 
 .sci 
 {
@@ -218,7 +219,7 @@ section .imgBx img
 {
 	opacity: 0.8;
 
-} */
+} 
 
 @keyframes fade-in{
 	0%
@@ -381,6 +382,7 @@ section .cont
 }
 section .cont h2
 {
+	border-bottom: 2px solid currentColor;
 	font-size: 3em;
 	font-weight: 700;
 	color: #ff9900;
