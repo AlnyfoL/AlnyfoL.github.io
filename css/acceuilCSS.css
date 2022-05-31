@@ -24,9 +24,13 @@ section
 
 section .imgBx
 {
-	margin-left: 20%;
-	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: 800px;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	position: relative;
 	border: 1px #ff9900 solid;
 	border-radius: 50px;
 	background: #000;
