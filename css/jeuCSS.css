@@ -9,7 +9,7 @@
 body
 {
 	overflow-x: hidden;
-	width:100%;
+	max-width:100%;
 }
 
 section
@@ -23,7 +23,16 @@ section
 	align-items: center;
 }
 
-
+section:nth-last-child(1)
+{
+	position: relative;
+	widows: 100%;
+	min-height: 5vh;
+	display: flex;
+	background: #000;
+	justify-content: space-between;
+	align-items: center;
+}
 
 section .content
 {
