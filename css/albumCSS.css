@@ -161,4 +161,22 @@ section .content a:hover
 	}
 }
 
+@media (max-width:1000px)
+{
+	ul > a,
+	ul button {
+		display: none;
+	}
+
+	ul {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	section .content h2
+	{
+		margin-top: 50%;
+	}
+
+}
+
 @media screen and (max-width:780px){}
