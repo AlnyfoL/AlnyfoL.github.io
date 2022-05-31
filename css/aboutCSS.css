@@ -10,6 +10,8 @@ body
 {
 	overflow-x: hidden;
 	max-width:100%;
+	overflow: auto;
+	margin: auto;
 }
 
 section
@@ -21,6 +23,8 @@ section
 	background: #000;
 	justify-content: space-between;
 	align-items: center;
+	overflow: auto;
+	margin: auto;
 }
 
 section:nth-last-child(1)
