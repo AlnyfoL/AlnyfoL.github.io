@@ -45,7 +45,7 @@ section .content
 	margin-bottom: 8% ;
 }
 
-section .content h3
+section .content h5
 {
 	font-size: 2em;
 	font-weight: 600;
@@ -62,24 +62,14 @@ section .content h2
 	text-shadow: 6px 6px 8px #ff9900;
 }
 
-section .imgBx 
+section .content h1
 {
-	position: relative;
-	padding-right: 200px;
-	animation: fade-in 0.5s ease-in forwards;
-	animation-delay: 2s;
-	opacity: 0;
-}
-
-section .imgBx img
-{
-	border: 1px #fff dashed;
-}
-
-#perso img
-{
-	width: 440px;
-	height: 300px;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 800;
+	margin-bottom: 3%;
+	color: #fff;
+	text-shadow: 6px 6px 8px #ff9900;
 }
 
 section .content h4
@@ -89,6 +79,16 @@ section .content h4
 	color: #fff;
 	margin-bottom: 2.5%;
 }
+
+section .content h3
+{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 100;
+	color: #fff;
+	margin-bottom: 2.5%;
+}
+
 
 section .content p
 {
