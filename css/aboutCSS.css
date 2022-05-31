@@ -245,3 +245,5 @@ section .imgBx img
 	font-size: 3em;
 	font-weight: 800;
 }
+
+@media screen and (max-width:780px){}

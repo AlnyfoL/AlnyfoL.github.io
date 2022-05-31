@@ -176,3 +176,5 @@ section .generale .imgBx img
 		opacity: 1;
 	}
 }
+
+@media screen and (max-width:780px){}

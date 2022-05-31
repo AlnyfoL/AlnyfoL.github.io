@@ -20,6 +20,7 @@ section
 	background: #000;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 
 section .imgBx
@@ -30,6 +31,7 @@ section .imgBx
 	margin-right: 40%;
 	border: 2px #ff9900 solid;
 	background: #000
+	
 }
 
 section .content
@@ -40,6 +42,8 @@ section .content
 	animation: left-in 0.5s ease-in forwards;
 	animation-delay: 0.5s;
 	opacity: 0;
+	overflow:auto;
+    margin:auto
 
 }
 

@@ -21,6 +21,7 @@ section
 	background: #000;
 	justify-content: space-between;
 	align-items: center;
+	
 }
 
 
@@ -61,6 +62,8 @@ section .content
 	animation-delay: 0.5s;
 	opacity: 0;
 	margin-bottom: 8% ;
+	overflow:auto;
+    margin:auto
 }
 section .content h2
 {
@@ -141,22 +144,6 @@ section .imgBx img
 	background: #ffd
 }
 
-/* #perso2
-{
-	max-width: 250px;
-}
-#perso3
-{
-	padding-right: 1%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center ;
-	align-items: center;
-}
-#perso3 img
-{
-	width: 65%;
-} */
 .nav 
 {
 	position: absolute;
@@ -239,6 +226,7 @@ section .imgBx img
 	width: 107%;
 	position: relative;
 	display: flex;
+	overflow:auto;
 }
 
 .container .card 
@@ -406,3 +394,5 @@ section .cont a:hover
 	color: #111;
 	background: #fff;
 }
+
+@media screen and (max-width:780px){}

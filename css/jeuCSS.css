@@ -56,7 +56,7 @@ section .content h2
 section .imgBx 
 {
 	position: relative;
-	padding-right: 100px;
+	padding-right: 400px;
 	animation: fade-in 0.5s ease-in forwards;
 	animation-delay: 2s;
 	opacity: 0;
@@ -69,7 +69,7 @@ section .imgBx img
 
 #perso img
 {
-	width: 750px;
+	width: 600px;
 }
 
 section .content h4
@@ -253,3 +253,5 @@ section .content a:hover
 		opacity: 1;
 	}
 }
+
+@media screen and (max-width:780px){}
