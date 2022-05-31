@@ -223,10 +223,11 @@ section .imgBx img
 
 .container
 {
-	width: 107%;
+	max-width: 100%;
 	position: relative;
 	display: flex;
 	overflow:auto;
+	margin: auto;
 }
 
 .container .card 
@@ -235,7 +236,9 @@ section .imgBx img
 }
 .container .card .face
 {
-	width: 450px;
+	overflow: auto;
+	margin: auto;
+	max-width: 100%;
 	height: 300px;
 	transition: 0.5s;
 }

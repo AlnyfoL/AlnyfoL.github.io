@@ -8,7 +8,6 @@
 body
 {
 	overflow-x: hidden;
-	max-width: 100%;
 }
 
 section
@@ -25,12 +24,14 @@ section
 
 section .imgBx
 {
-	max-width: 100%;
+  	margin-right: 40%;
+	position: relative;
 	width: 250px;
-	float:left;
-	margin-right: 40%;
 	border: 2px #ff9900 solid;
-	background: #000
+	background: #000;
+	animation: fade-in 0.5s ease-in forwards;
+	animation-delay: 2s;
+	opacity: 0;
 	
 }
 
