@@ -8,6 +8,7 @@
 body
 {
 	overflow-x: hidden;
+	max-width: 100%;
 }
 
 section
@@ -23,9 +24,10 @@ section
 
 section .imgBx
 {
+	max-width: 100%;
 	width: 250px;
 	float:left;
-	margin-right: 38%;
+	margin-right: 40%;
 	border: 2px #ff9900 solid;
 	background: #000
 }
@@ -134,4 +136,5 @@ section .content a:hover
 		opacity: 1;
 	}
 }
-@media screen and (max-width:1024px){}
+
+@media screen and (max-width:780px){}
