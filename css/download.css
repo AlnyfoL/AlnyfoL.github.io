@@ -50,8 +50,8 @@ section .generale .content
 
 section .generale h2
 {
-	font-size: 3em;
-	font-weight: 800;
+	font-size: 2em;
+	font-weight: 600;
 	color: #fff;
 }
 
@@ -78,7 +78,8 @@ section .generale .content p
 
 section .imgBx
 {
-	margin-top: 50px;
+	margin-top: 200px;
+
 }
 section .generale a
 {
