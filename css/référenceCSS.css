@@ -133,6 +133,11 @@ section .content a:hover
 	}
 }
 
+section a{
+	display: inline-block;
+	text-decoration: none;
+}
+
 @media (max-width:1000px)
 {
 	ul > a,
@@ -144,6 +149,15 @@ section .content a:hover
 		flex-direction: column;
 		align-items: flex-start;
 	}
+
+	section .content h2
+	{
+		margin-top: 80%;
+	}
+	section ul li a, section ul li:hover a{
+		padding: 10px 0px;
+	}
+
 
 }
 @media screen and (max-width:780px){}

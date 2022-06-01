@@ -177,6 +177,11 @@ section .generale .imgBx img
 	}
 }
 
+section a{
+	display: inline-block;
+	text-decoration: none;
+}
+
 @media (max-width:1000px)
 {
 	ul > a,
@@ -188,6 +193,15 @@ section .generale .imgBx img
 		flex-direction: column;
 		align-items: flex-start;
 	}
+
+	section .imgBx {
+		margin-top: 60%;
+	}
+
+	section ul li a, section ul li:hover a{
+		padding: 10px 0px;
+	}
+
 
 }
 

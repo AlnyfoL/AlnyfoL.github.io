@@ -161,6 +161,11 @@ section .content a:hover
 	}
 }
 
+section a{
+	display: inline-block;
+	text-decoration: none;
+}
+
 @media (max-width:1000px)
 {
 	ul > a,
@@ -174,7 +179,10 @@ section .content a:hover
 	}
 	section .content h2
 	{
-		margin-top: 50%;
+		margin-top: 130%;
+	}
+	section ul li a, section ul li:hover a{
+		padding: 10px 0px;
 	}
 
 }
