@@ -75,6 +75,13 @@ section .content h1
 	color: #fff;
 	text-shadow: 6px 6px 8px #ff9900;
 }
+section .content h5
+{
+	font-size: 2em;
+	font-weight: 600;
+	color: #ff9900;
+	margin-bottom: 4%;
+}
 
 section .content h3
 {
