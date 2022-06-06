@@ -29,7 +29,7 @@ section .imgBx
 	margin-left: auto;
 	margin-right: auto;
 	width: 600px;
-	margin-top: 10%;
+	margin-top: 15%;
 	margin-bottom: 2%;
 	position: relative;
 	border: 1px #ff9900 solid;
@@ -171,4 +171,5 @@ section a{
 		padding: 10px 0px;
 	}
 }
+
 @media screen and (max-width:780px){}
