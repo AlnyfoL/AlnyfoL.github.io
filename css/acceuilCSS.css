@@ -12,7 +12,7 @@ body
 
 section
 {
-	background-image: linear-gradient(rgb(0, 0, 0), rgba(174, 107, 6, 0.785)),
+	background-image: linear-gradient(rgb(0, 0, 0), rgba(255, 145, 0, 0.783)),
                   url("../img/fond\ de\ site.png");
 	position: relative;
 	widows: 100%;

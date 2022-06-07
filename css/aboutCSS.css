@@ -46,16 +46,17 @@ section .content
 	animation: left-in 0.5s ease-in forwards;
 	animation-delay: 0.5s;
 	opacity: 0;
-	margin-bottom: 8% ;
+	margin-top: 15%;
+	margin-bottom: 5% ;
 }
 #v1
 {
-	background-image: url(../img/fond\ de\ site.png);
+	background-image: url(../img/color2.png);
 	background-repeat: no-repeat;
 }
 #v1 .content
 {
-	background: rgba(228, 144, 9, 0.877);
+	background: rgba(0, 0, 0, 0.877);
 }
 
 section .content h2
@@ -275,7 +276,7 @@ section a{
 		align-items: flex-start;
 	}
 	section .content h1{
-		margin-top: 150%;
+		margin-top: 120%;
 	}
 	
 	section ul li a, section ul li:hover a{
