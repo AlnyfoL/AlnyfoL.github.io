@@ -46,8 +46,6 @@ section .content
 	animation: left-in 0.5s ease-in forwards;
 	animation-delay: 0.5s;
 	opacity: 0;
-	margin-top: 15%;
-	margin-bottom: 5% ;
 }
 #v1
 {
@@ -57,6 +55,8 @@ section .content
 #v1 .content
 {
 	background: rgba(0, 0, 0, 0.877);
+	margin-top: 15%;
+	margin-bottom: 8% ;
 }
 
 section .content h2
@@ -276,7 +276,7 @@ section a{
 		align-items: flex-start;
 	}
 	section .content h1{
-		margin-top: 120%;
+		margin-top: 150%;
 	}
 	
 	section ul li a, section ul li:hover a{
