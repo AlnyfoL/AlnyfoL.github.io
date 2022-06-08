@@ -152,8 +152,8 @@ section .imgBx img
 }
 #ani img
 {
-	width: 650px;
-	height: 400px;
+	width: 550px;
+	height: 300px;
 	margin: 10px auto 20px;
     display: block;
 	border : 1px solid #ffd;
@@ -171,7 +171,7 @@ section .imgBx img
 }
 #map2 img
 {
-	width: 250px;
+	width: 200px;
 	float:right;
 	margin-left: 5%;
 	border : 1px solid #ffd;
@@ -180,6 +180,13 @@ section .imgBx img
 #int img{
 	position: relative;
 	width: 500px;
+	border : 1px solid #ffd;
+	background: #ffd
+}
+#aniv3 img{
+	margin: 10px auto 20px;
+	width: 400px;
+	display: block;
 	border : 1px solid #ffd;
 	background: #ffd
 }
