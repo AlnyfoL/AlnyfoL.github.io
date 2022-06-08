@@ -72,8 +72,7 @@
 					opté pour un jeu de survie multijoueur en FPS (“First-person shooter”) de type
 					PvE (“Player vs Environment”). De 1 à 4 joueurs, le but est de survivre le plus
 					longtemps possible à des vagues de zombies dans un camp militaire abandonné.
-					Des améliorations seront possible tout au long de l’aventure et de nombreux
-					événement spéciaux occurreront durant différents tours.</p>
+					Des améliorations seront possible tout au long de l’aventure.</p>
 			</div>
 		</div>
 	</section>
@@ -249,6 +248,8 @@
 				<h3>Site Web</h3>
 				<p>     Concernant cette fameuse partie, avant de commencer la création du site il a fallu avant trouver un design qui correspond au thème de notre jeu comme par exemple accordé les couleurs du site avec celles du logo. Cette étape est une des parties les plus longues dans la création du site car quand on veut programmer quelque chose si on ne sait pas comment faire il suffit de faire quelques recherches. Alors que pour le  design si l'idée ne nous vient pas à l'esprit nous ne pouvons pas avancer sur la partie programmation. C'est pourquoi comme nous devons tout de même présenter un site Web pour la deuxième soutenance nous sommes rester pour l'instant sur un style plutôt basique et nous le rendrons plus esthétique pour la soutenance finale même si le rendu est déjà assez sympathique. De plus, nous nous sommes principalement attardé sur le contenu car un site vide n'a pas vraiment d'utilité. Cependant comme notre site est en changement perpétuel, il se peut que lorsque vous irez dessus entre la deuxième soutenance et la soutenance finale qu'il y est des espaces vides ou même des décalages. Cela est dû également au fait que pour la deuxième soutenance, nous voulions que notre site soit déjà accessible sur le Web parce que cela le rend plus facile d'accès et à regarder autant pour vous que pour nous.
 					Concernant la conception de ce site, tout d'abord notre site est fait en html et en css vanilla. Nous avons opté pour ce language car nous voulons un site statique sans requête vers un backen donc ce language est suffisant.
+					Une simple précision la barre de naviguation et le bouton github sont présent sur toutes les pages du site.
+					De plus, pour mettre notre site accesible à tous sur le  Web  nous avons utilisé l'application GitHub Pages. Ce site est relié à un repository de notre git cela facile donc son utilisation.
 					<br></br><br></br>
 					1. Page : Accueil<br></br>
 					Tout d'abord, nous nous sommes occupés de la page d'accueil qui regroupe le logo de notre jeu, et son nom bien evidemment mais également une phrase d'accroche. Nous avons également implémenter le bouton de téléchargement du jeu, cependant pour l'instant celui-ci vous redirige vers une page vous informant qu'il n'est pas encore disponible. De plus, vous trouverez aussi sur cette page d'accueil la barre de naviguation qui vous permet de vous déplacer dans les différentes pages du site. Pour cette barre, nous avons déjà implémenter quelques fonctionnalités intéréssantes tel que le fait que la page active est d'une couleur différente des autres pages. De plus, quand vous voulez selectionner une autre page la couleur change également quand votre souris est dessus. 
@@ -277,8 +278,7 @@
 					7. Page : non.html (non visible dans la barre de naviguation)<br></br>
 
 					Cette page n'est pas visible dans la barre de naviguation car elle va disparaitre à la prochaine soutenance car il s'agit de la page dans laquelle vous être redirigé quand vous voulez télécharger le jeu depuis la page d'acceuil. 
-					Une simple précision la barre de naviguation et le bouton github sont présent sur toutes les pages du site.
-					De plus, pour mettre notre site accesible à tous sur le  Web  nous avons utilisé l'application GitHub Pages. Ce site est relié à un repository de notre git cela facile donc son utilisation. </p>
+				 </p>
 				</br></br><br></br>
 				<div class="imgBx" id="ani">
 					<img src="img/v1 site web.PNG">
@@ -309,6 +309,13 @@
 					Ici, il y a une animation Idle encore une fois, pour que le visuel ne soit pas figé et soit réaliste. Avec ceci, nous avons également une animation de rechargement et une animation de tir.
 					Avec ces deux éléments, nous avons pu les combiner afin d'obtenir ce que l'on veut, c'est-à-dire de voir la première personne pour nous-même, avec les bras et l'arme, mais aussi que nos coéquipiers voient le personnage qui a été travaillé pour la première soutenance, et non pas les bras et l'arme.
 					C'est à l'aide de Photon et de ses fonctionnalités que nous allons pouvoir manipuler tous ces composants. 
+					<br></br>
+					C'est grâce au "Photon Animator View" que tout est synchronisé.
+					Ceci étant, il faut aussi pouvoir gérer quelle arme est dans la main du joueur. Pour cela, nous avons référencé les GameObjetcs "FPS-AK47" et "FPS-M4A1" pour la première personne, et "AK47" et "M4A1" pour les animations du joueur comme cela est fait sur la figure ci-dessous.
+					"PV" est la variable "Photon View", donc si le script est celui du joueur, alors on desactive "Perso", qui est le personnage en entier. Ainsi, seule la vue en FPS est affichée, avec l'AK (car elle est déjà activée sur Unity, et la M4 est désactivée).
+					Dans le cas contraire, si le script est celui d'un autre jour, le booléan "PV.IsMine" est "false". Ici, nous désactivons alors les deux GameObjects qui représentent la première personne, et activons l'AK car c'est la première arme du joueur, donc c'est forcément cell-ci que l'on veut voir, et on désactive également la M4, 
+					sinon les armes se superposent, ce que l'on ne veut pas. Tout ceci est lancé à la première compilation, mais il faut également actualiser ces données à tout instant. 
+					Ainsi, dans "l'Udpate" (qui est compilé à chaque rafraîchissement du jeu), lorsque "l'ItemIndex" (permettant d'afficher l'arme 0 ou l'amre 1 dans la liste d'arme de "Items" pour la première vue) est modifié, alors on active ou desactive l'Ak et la MK.
 					<div class="imgBx" id="aniv3">
 						<img src="img/anim.png">
 					</div>
@@ -332,13 +339,35 @@
 				<p></p>
 					  <br></br>
 					  <h3>Interfaces</h3>
-					  <p></p>
+					  <p>Pour cette dernière soutenance, la majorité du travail à faire pour cette partie fut sur les menus. En effet, jusqu'à là, 
+						  le menu a été fait en sorte à ce qu'il soit purement fonctionnel. Nous nous étions point penché sur l'aspect esthétique des menus.
+						Tout d'abord, pour le menu principal, plusieurs modifications ont étés faites : 
+						<br></br> - Le titre du jeu a été ajouté en haut à gauche. Il possède un fond personnalisé et un dégradé de couleur pour lui donné du caractère.
+						<br></br> - Deux paragraphes ont été ajoutés dans le coin inférieur gauche pour expliquer le contexte et le but du jeu mais aussi quelques instructions pour favoriser la navigation dans les menus et pour quitter le jeu.
+						<br></br> - Le model 3D qu'incarnent les joueurs en jeu s'affiche dorénavant dans le menu principal avec aussi une animation de repos qui tourne en boucle (généralement appelé "Idle Animation"). Cela permet de rendre le menu principal plus vivant et plus dynamique mais aussi d'avoir un aperçu du personnage.
+						<br></br> - Une couleur différente a été ajouté à chaque bouton pour les distinguer plus facilement.
+						<br></br> - La position et l'ordre de chaque élément a été réajusté pour rendre le menu principal plus cohérent et facile d'utilisation.
+						<br></br> - Le bouton "Quit Game": est maintenant pleinement fonctionnel.
+						<br></br><br></br>
+						Par la suite, dans tous les autres menus, un fond d'écran a été ajouté pour rendre les menus plus captivants.
+						Dans le lobby de la room (la salle d'attente), la liste des commandes disponibles en jeu a été ajoutée sur le côté pour que les joueurs soient au courant des différentes options qu'ils ont en jeu.
+						La deuxième partie de l'interface se consacre à l'interface utilisateur en jeu. Nous avons ajouté 3 éléments dans le coin en haut à gauche :
+						<br></br> - L'argent que le joueur possède actuellement. Ce compteur se met à jour dès qu'il recoit de l'argent (en tuant des zombies) ou perd de l'argent (quand il achète quelque chose au magasin par exemple).
+						<br></br> - Le niveau de son AK. De base au niveau 1, augmente de 1 à chaque fois qu'il améliore son AK au magasin.
+						<br></br> - Le niveau de sa M4A1. De base sur l'état "M4A1 not yet unlocked". Passe au niveau 1 lorsque le joueur l'achète au magasin et augmente de 1 à chaque fois qu'il améliore son M4A1.
+						<br></br><br></br>
+						De plus nous avons ajouté un viseur au milieur de l'écran (fait à partir de 4 images de couleur unie) et nous avons rendu le curseur invisible et bloqué sur place (pour pas avoir un curseur qui gesticule partout sur l'écran et pour éviter qu'il sorte de la fenêtre sur les ordinateurs possédant plusieurs écrans en mode "étendre l'affichage").
+						<br></br>
+						Enfin, la dernière partie de l'interface fut sur l'affichage de la description des différentes caisses du magasin lorsqu'on pointe vers celles-ci. Pour cela, nous avons fait en sorte que les objets avec lesquels ont peut intéragir (dans notre cas, les caisses du magasin) appartiennet à une même interface "IInteractable" (une définition de type, similaire a une "class").
+						 Ensuite, chaque caisse possède un script (un fichier C\#) contenant la description de la caisse sous format texte et aussi la méthode qui permet d'effectuer l'action en question). Alors quand un joueur détecte un objet interactif, il récupère ses informations (description + méthode) à partir du script de l'objet vers lequel il pointe et affiche sa description sur l'interface
+						  utilisateur du joueur.</p>
 						  <br></br>
 				<h3>Game Management</h3>
 				<p></p>
 					<br></br>
 				<h3>Réseau</h3>
 				<p>
+					Pour la partie réseau, comme pour la deuxième soutenance, consistait plus qu'à synchronisé tout ce qui est commun aux joueurs. Cette fois-ci, il fallait synchroniser les animations de mouvements des joueurs, la position des zombies, leur rotation, ainsi que leur animation de mort.
 			</p><br>
 			<br></br>
 				<h3>Autres \ Détails </h3>
@@ -348,15 +377,15 @@
 			<p>
 				Concernant cette fameuse partie, malgré un avancement très conséquent pour la deuxième soutenance, le travail restant 
 				pour la dernière soutenance restaient tout autant volumineux. Dans un premier temps, il a fallu adapter la page pour tout
-				 les écrans, c’est-à-dire autant pour les mobiles que pour les ordinateurs , sans oublier les rétrécissement de page. Pour cela,
-				  nous avons utilisé la commande css Media queries, c’est un module permettant d’adapter le contenu d’une page Web aux caractéristiques 
+				 les écrans, c’est-à-dire autant pour les mobiles que pour les ordinateurs , sans oublier les rétrécissements de page. Pour cela,
+				  nous avons utilisé la commande css "Media queries", c’est un module permettant d’adapter le contenu d’une page "Web" aux caractéristiques 
 				  de l’appareil de l’utilisateur. Cette partie était pour moi la partie la plus complexe, surtout concernant le menu car celui-ci étant en ligne sur ordinateur, il a fallu le transformer en colonne et ce n’est pas aussi simple que nous le croyons.
 				  <br></br><br></br>
 				  Ensuite, nous avons ajouté des animations pour animer le site Web et que celui-ci paraisse moins scolaire et 
-				  soit plus attractif. Pour cela nous avons utilisé la méthode des Keyframes. En CSS, les Keyframes en français,
+				  soit plus attractif. Pour cela nous avons utilisé la méthode des "Keyframes". En CSS, les "Keyframes" en français,
 				   les images clés sont utilisées pour les animations. Il vous donne plus de contrôle sur l’animation que vous souhaitez effectuer. 
 				   L’animation est créée en passant progressivement d’un style à l’autre. Cette méthode nous a permis d'obtenir un rendu très intéressant.
-				    On retrouve également des boutons pour contacter les différents membres du groupe sur la page consacré aux membres. Le site Web
+				    On retrouve également des boutons pour contacter les différents membres du groupe sur la page consacré aux membres. Le site "Web"
 					possède toujours le bouton pour accéder au GitHub. Nous avons également rajouté la dernière version du projet soit la version 3 dans l’onglet « Le Projet ». 
 					Il a également fallu mettre en place le bouton pour télécharger le jeu mais également le rapport complet du projet. Et enfin, nous avons inclus le manuel 
 					d’utilisation, d’installation, et de désinstallation à l’onglet «Téléchargement» du site Web. Sans oublier la création d'une nouvelle page 
@@ -364,11 +393,11 @@
 					les liens des assets que nous avons utilisés, les liens des différents audios, etc. 
 				  Quand nous regardons tout ce que nous avons cité avant nous pourrions croire que ce n’est pas si long mais en html et en css un problème est très vite arrivé.
 					<br></br><br></br>
-					De plus, l’esthétique est un aspect du site Web qu’il ne faut pas négliger et pour obtenir un rendu qui plait à 
+					De plus, l’esthétique est un aspect du site "Web" qu’il ne faut pas négliger et pour obtenir un rendu qui plait à 
 					tous les membres du groupe, c’est un vrai travail car l’inspiration ne tombe pas du ciel et qu’il faut parfois faire beaucoup 
 					de recherche pour avoir une idée. Et après bien évidemment il faut faire les recherches permettant de coder celle-ci. De plus, 
 					concernant notre site toutes les images sont issues de notre jeu. Enfin, les langages de programmations que nous utilisons pour 
-					le site Web sont facile d’utilisation et à porter de tous lorsque nous savons bien se renseigner sur ceux-ci. Notre page Web est désormais finie, nous espérons que celle-ci vous plaira.
+					le site Web sont facile d’utilisation et à porter de tous lorsque nous savons bien se renseigner sur ceux-ci. Notre page "Web" est désormais finie, nous espérons que celle-ci vous plaira.
 			</p></br></br>
 			<div class="imgBx" id="ani">
 				<img src="img/site web v2.PNG">
