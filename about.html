@@ -336,7 +336,16 @@
 			</br>
 			<br></br>
 				<h3>Engine</h3>
-				<p></p>
+				<p>Pour cette soutenance, la première taches concernant l'Engine de notre jeux était d'adapter le path finding des zombies à notre Map. 
+					Malgré la vaste présence d'obstacle. La librairie "NavMeshAgent" fut notre solution. Grâce à ses méthodes, le calcul des chemins emprintables
+					 pour aller d'un point A au plus proche d'un point B fut un jeu d'enfants. Il suffit pour cela de creer un agent représenté par un cylindre d'un 
+					 certain diamètre et hauteur. Et l'algorithme calcule tout les espaces emprintables par ce cylindre. gràce à cela "l'Agent" calculant le trajet à 
+					 emprinté sur cette dite surface. La seconde tache fut d'implémenter les zombies avec les serveurs. Pour que chaques joueurs puissent voir les zombie
+					 à leurs emplacement et leurs animations. Pour cela photon fut la meilleurs idée trouvé du fait est qu'il avait déjà été utilisé précédemment pour coder 
+					 le menu. Mais au therme de tous ces testes. Cela fut un échecs. L'implémentation en solo ou en lien avec l'hôte fonctionne sans problèmes mais dés lors 
+					 que l'on intègre le multi joueur, plus rien de fonctionne. Tous celà est de ma faute, j'avais sous estimé la tâche et malgré de nombreux essais. Rien ne
+					fonctionne complétement. Parmis ces tentatives, l'utilisation d'un  "GameManager" rien ne fait celà ne fonctionner à moitié. 
+					Je suis triste et dériblement exaspérer de ma performance pour cette soutenance final.</p>
 					  <br></br>
 					  <h3>Interfaces</h3>
 					  <p>Pour cette dernière soutenance, la majorité du travail à faire pour cette partie fut sur les menus. En effet, jusqu'à là, 
@@ -363,7 +372,7 @@
 						  utilisateur du joueur.</p>
 						  <br></br>
 				<h3>Game Management</h3>
-				<p></p>
+				<p>Afin d'implémenter un système d'amélioration d'armes il a paru nécéssaire d'ajouter un "shop" permettant l'achat de dégat supplémentaire sur nos armes. Ainsi qu'un shop permettant d'acheter une seconde armes. Cette Argent fut donc implémenter grâce à une classe "GameManagement" qui au fur et à mesure que les statistiques des zombies augmentent l'argent offert à chauque élimination augmente.</p>
 					<br></br>
 				<h3>Réseau</h3>
 				<p>
